@@ -8,8 +8,14 @@
 
 /* Colours values used in the layout #fff, #222, #000,  and #f8fafc. */
 
+html {
+  color: #222;
+}
+
+
 body{
   font-family: poppins;
+  
 }
 
 h1 {
@@ -39,7 +45,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0.5em;
+  padding: 1em;
 }
 
 #product-shots .wrapper {
@@ -56,7 +62,7 @@ nav ul li {
 
 #product-shots img {
   width: 100%;
-  padding: 0.5em;
+  padding: 1em;
   border-radius: 5%;
 }
  
@@ -78,8 +84,8 @@ nav ul li {
 
 #sweetheart .wrapper {
   margin: auto;
-  border: 0.5em;
-  padding: 0.5em;
+  border: 1em;
+  padding: 1em;
 }
 #sweetheart #limited {
   text-transform: uppercase;
@@ -98,6 +104,39 @@ nav ul li {
 
 #behind-the-dough {
   background-color: #f8fafc;
-  padding: 0.5em;
+  padding: 1em;
 }
+
+#what-people {
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+}
+
+#what-people .wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+ 
+#h2 {
+  order: 1;
+}
+
+#item1 {
+  order: 2;
+}
+
+#item2 {
+  order: 2;
+}
+
+#item3 {
+  order: 3;
+}
+
+
+
+
+
 
