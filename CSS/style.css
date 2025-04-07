@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border-radius: 5%;
 }
 
 .container {
@@ -19,6 +18,7 @@ h1 {
 
 h2 {
   font-size: 1.802rem;
+  text-align: center;
 }
 
 h3 {
@@ -41,7 +41,7 @@ nav ul li {
   padding: 0.5em;
 }
 
-.product-shots {
+#product-shots .wrapper {
   display: grid;
   grid-template-areas:
   "div1 div1 div1"
@@ -53,37 +53,49 @@ nav ul li {
   align-items: flex-start;
 }
 
-.product-shots img {
+#product-shots img {
   width: 100%;
-  padding: 1em;
-  border-radius: 10%;
+  padding: 0.5em;
+  border-radius: 5%;
 }
  
-.product-shots img:nth-child(1) {
+#product-shots img:nth-child(1) {
   grid-area: div1;
 }
 
-.product-shots img:nth-child(2) {
+#product-shots img:nth-child(2) {
   grid-area: div2;
 }
 
-.product-shots img:nth-child(3) {
+#product-shots img:nth-child(3) {
   grid-area: div3;
 }
 
-.product-shots img:nth-child(4) {
+#product-shots img:nth-child(4) {
   grid-area: div4;
 } 
 
-#limited {
+#sweetheart .wrapper {
+  margin: auto;
+  border: 0.5em;
+  padding: 0.5em;
+}
+#sweetheart #limited {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.btn {
+#sweetheart .btn {
   color: #fff;
   background-color: #000;
   text-decoration: none;
+  padding: 0.5em;
+  border-radius: 5%;
+  align-self: center;
   margin: auto;
+}
+
+#behind-the-dough {
+  background-color: #f8fafc;
   padding: 0.5em;
 }
