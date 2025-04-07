@@ -4,6 +4,7 @@
 
 .container {
   max-width: 1200px;
+  justify-content: center;
 }
 
 /* Colours values used in the layout #fff, #222, #000,  and #f8fafc. */
@@ -12,6 +13,9 @@ html {
   color: #222;
 }
 
+#logo {
+  width: 200px;
+}
 
 body{
   font-family: poppins;
@@ -117,23 +121,13 @@ nav ul li {
   display: flex;
   flex-direction: column;
   margin: auto;
-}
- 
-#h2 {
-  order: 1;
+  padding: 1em;
 }
 
-#item1 {
-  order: 2;
+blockquote {
+  margin-left: 0;
 }
 
-#item2 {
-  order: 2;
-}
-
-#item3 {
-  order: 3;
-}
 
 
 
