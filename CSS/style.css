@@ -38,12 +38,14 @@ h3 {
 
 header {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
 }
 
 nav ul {
   display: flex;
+  flex-wrap: nowrap;
   list-style: none;
   padding-left: 0;
 }
@@ -58,7 +60,6 @@ nav ul li {
   "div1 div1 div1"
   "div1 div1 div1"
   "div2 div3 div4";
-  grid-template-columns: repeat(3,1fr);
   margin: auto;
   justify-content: space-between;
   align-items: flex-start;
@@ -119,6 +120,7 @@ nav ul li {
 
 #what-people .wrapper{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: auto;
   padding: 1em;
@@ -176,6 +178,55 @@ footer {
   text-align: center;
 }
 
+/* Add a min-width media query for the screen size of 768px and above and adjust page to match the screenshot labeled 'product-page-768' */
+
+@media (min-width: 768px){
+
+  #product-shots .wrapper {
+    display: grid;
+    grid-template-areas: 
+    "div1 div2"
+    "div3 div4";
+    justify-content: center;
+  }
+
+  #product-shots img {
+    border-radius: 5%;
+  }
+
+  #behind-the-dough .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #behind-the-dough .wrapper h2 {
+    flex-basis: 100%;
+  }
 
 
+  #behind-the-dough .wrapper p { 
+    flex-basis: 50%;
+    padding: 0.5em;
+  }
+
+  #what-people .wrapper {
+    flex-direction: row;
+  }
+
+  #what-people h2 {
+    flex-basis: 100%;
+  }
+
+  #what-people .wrapper div:nth-child(2),
+  #what-people .wrapper div:nth-child(3),
+  #what-people .wrapper div:nth-child(4) {
+    flex-basis: calc(100% / 3);
+    padding: 1em;
+  }
+
+  .options {
+    grid-template-areas:
+    "div1 div2 div3 div4";
+  }
+}
 
