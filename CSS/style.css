@@ -128,8 +128,46 @@ blockquote {
   margin-left: 0;
 }
 
+.options {
+  display: grid;
+  grid-template-areas: 
+  "div1 div2"
+  "div3 div4";
+  text-align: center;
+}
 
+.options div:nth-child(1){
+  grid-area: div1;
+}
 
+.options div:nth-child(2){
+  grid-area: div2;
+}
+
+.options div:nth-child(3){
+  grid-area: div3;
+}
+
+.options div:nth-child(4){
+  grid-area: div4;
+}
+
+.options img {
+  width: 100%;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+}
+
+.options .item {
+  margin: 1em;
+  background-color: #f8fafc;
+  border-radius: 5%;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
 
 
 
